@@ -1,0 +1,12 @@
+# My special aliases
+alias deb='proot-distro login debian'
+alias tmp='cd /data/data/com.termux/files/usr/tmp'
+alias c='clear'
+
+# git commands
+alias gs='git status'
+alias gadd='git add .'
+alias gc='git commit -m'
+alias gpull='git pull'
+alias gpush='git push'
+
