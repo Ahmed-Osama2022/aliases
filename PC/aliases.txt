@@ -1,0 +1,30 @@
+# My special aliases
+
+# git commands
+alias gs='git status'
+alias gadd='git add .'
+alias gc='git commit -m'
+alias gpull='git pull'
+alias gpush='git push'
+
+# Shortcuts for directories
+alias lin='cd /home/ahmed/Linux/new'
+alias net='cd /home/ahmed/Linux/new/net'
+alias htm='cd ~/HTML_Linux/'
+alias uda='cd ~/HTML-UDACITY/'
+alias css='cd ~/ahmedCss'
+alias tmp='cd /tmp'
+
+
+# Useful tools
+alias PUP='bash ~/uptime/uptimescript.sh' 
+alias PP='poweroff'
+alias vs='code .;exit'
+alias vmp4='vlc ./*.mp4 &'
+alias c='clear'
+
+
+# Special aliases for auto-cpufreq software
+alias au='auto-cpufreq --stats'
+alias auedit='sudo gedit /etc/auto-cpufreq.conf'
+alias aures='sudo systemctl restart auto-cpufreq.service'
