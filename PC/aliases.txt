@@ -6,6 +6,7 @@ alias gadd='git add .'
 alias gc='git commit -m'
 alias gpull='git pull'
 alias gpush='git push'
+alias gch='git checkout'
 
 # Shortcuts for directories
 alias lin='cd /home/ahmed/Linux/new'
@@ -15,11 +16,37 @@ alias uda='cd ~/HTML-UDACITY/'
 alias css='cd ~/ahmedCss'
 alias tmp='cd /tmp'
 
+# fix proplem with code in Wayland sessions
+# alias code='code --enable-ozone --ozone-platform=wayland'
+
+# fix proplem with Typora in Wayland sessions
+# alias typora='typora --enable-ozone --ozone-platform=wayland'
+
+# Best vlc for Ubuntu
+alias vlc='flatpak run org.videolan.VLC'
 
 # Useful tools
-alias PUP='bash ~/uptime/uptimescript.sh' 
-alias PP='poweroff'
-alias vs='code .;exit'
+# This script checks if the user wants to relly shutdown the PC? 
+alias PUP='bash ~/uptime/uptimescript.sh'
+
+# This will shutdown the PC immediately
+# alias PP='poweroff'
+
+# To prevent the false write of `reboot` command 
+alias reboot='/usr/bin/rebootCheck.sh'
+
+# For VScode
+alias vs='code . ; exit'
+alias vsc='code . ; exit'
+alias vscf='code --profile "frontend" . ; exit'
+alias vscb='code --profile "backend" . ; exit'
+alias vscl='code --profile "laravel" . ; exit'
+
+# For Antigravity Editor
+alias antl='antigravity --profile "laravel" . ; exit'
+alias antf='antigravity --profile "frontend" . ; exit'
+alias antb='antigravity --profile "backend" . ; exit'
+
 alias vmp4='vlc ./*.mp4 &'
 alias c='clear'
 
@@ -28,3 +55,41 @@ alias c='clear'
 alias au='auto-cpufreq --stats'
 alias auedit='sudo gedit /etc/auto-cpufreq.conf'
 alias aures='sudo systemctl restart auto-cpufreq.service'
+
+# for check networ connection
+alias pi='ping -c 3 google.com'
+
+# for importing bootstrap to the cureent project
+alias bootstrap5.1="cp -r /home/ahmed/Documents/bootstrap-5.1.3/*/ ."
+alias bootstrap5.3="cp -r /home/ahmed/Documents/bootstrap-5.3.5/*/ ."
+
+# For speedtest and check the internet connection
+alias speedck='ping -c 3 google.com ; speedtest-cli'
+
+# for apache2 server
+alias www='cd /var/www/html/'
+
+# |-------- For systemctl -------|
+alias sv='sudo systemctl '
+alias svstat='sudo systemctl status '
+alias svstop='sudo systemctl stop '
+alias svrel='sudo systemctl reload '
+alias svres='sudo systemctl restart '
+alias sven='sudo systemctl enable '
+alias svdis='sudo systemctl disable '
+# |--------------------------------|
+
+alias lta='ls -tlA'
+
+# ===================
+# For laravel project
+alias pa='php artisan'
+alias pas='php artisan serve'
+alias pamf='php artisan migrate:fresh'
+alias pam='php artisan migrate'
+alias pamodel='php artisan make:model'
+# ===================
+# To fix wrong write
+alias sl='ls'
+# ===========================
+
